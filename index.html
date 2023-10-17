@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Анализатор текста</title>
+      <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <h1>Анализ текста на информативность.</h1>
+    <textarea id="textArea" rows="10" cols="50" placeholder="Введите ваш текст здесь..."></textarea><br>
+    <button onclick="analyzeText()">Анализировать</button>
+    <hr>
+  <p id="totalWords">Общее количество слов: </p>
+    <hr>
+<h3>Сколько раз повторяется n количество слов в процентном соотношении.</h3> 
+<canvas id="frequencyChart"></canvas>
+<div id="frequencyStats"></div>
+<h3>Рейтинг по частоте повторяемости слов в процентном соотношении.</h3>
+    <canvas id="myChart"></canvas>
+    <div id="wordStats"></div>
+  <hr>
+   <h3>Вывод:</h3>
+    <div id="textInfo"></div>
+  <hr> 
+    <h3>Определение:</h3>
+     <div id="textInfo1"></div>
+  <hr>
+    <!-- Подключаем библиотеку Chart.js -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
